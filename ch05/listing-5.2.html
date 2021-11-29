@@ -24,6 +24,85 @@
       max-width: 1080px;
       margin: 0 auto;
     }
+
+    .site-nav {
+      display: flex;
+      padding-left: 0;
+      list-style-type: none;
+      background-color: #5f4b44;
+      border-radius: .2em;
+    }
+
+    .site-nav > li {
+      margin-top: 0;
+    }
+
+    // Targets every list item that follows another list item (that is, all but the first)
+    .site-nav > li + li {
+      margin-left: 1.5em;
+    }
+
+    .site-nav > .nav-right {
+      margin-left: auto;
+    }
+
+    .site-nav > li > a {
+      display: block;
+      padding: .5em 1em;
+      background-color: #cc6b5a;
+      color: white;
+      text-decoration: none;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .tile {
+      padding: 1.5em;
+      background-color: #fff;
+    }
+
+    .flex > * + * {
+      margin-top: 0;
+      margin-left: 1.5em;
+    }
+
+    .column-main {
+      flex: 1; // 1 1 66.67%%
+    }
+
+    .column-sidebar {
+      /* flex: 33.33%; // 1 1 33.33%% */
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .column-sidebar > .tile {
+      flex: 1;
+    }
+    .login-form h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: .9em;
+      font-weight: bold;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .login-form input:not([type="checkbox"]):not([type="radio"]) {
+      display: block;
+      width: 100%;
+      margin-top: 0;
+    }
+    .login-form button {
+      margin-top: 1em;
+      border: 1px solid #cc6b5a;
+      padding: .5em 1em;
+      cursor: pointer;
+    }
+
   </style>
 </head>
 
@@ -46,9 +125,20 @@
     <main class="flex">
       <div class="column-main tile">
         <h1>Team collaboration done right</h1>
-        <p>Thousands of teams from all over the
-          world turn to <b>Ink</b> to communicate
-          and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
+        <p>Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.</p>
       </div>
       <div class="column-sidebar">
         <div class="tile">
