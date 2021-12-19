@@ -11,6 +11,10 @@
       box-sizing: inherit;
     }
 
+    body * + * {
+      margin-top: 1.5em;
+    }
+
     body {
       background-color: #eee;
       font-family: Helvetica, Arial, sans-serif;
@@ -20,6 +24,7 @@
       color: #fff;
       background-color: #0072b0;
       border-radius: .5em;
+      padding: 1em 1.5em;
     }
 
     .container {
@@ -30,16 +35,38 @@
       width: 70%;
       background-color: #fff;
       border-radius: .5em;
+      padding: 1em 1.5em;
     }
 
     .sidebar {
       width: 30%;
       padding: 1.5em;
+      margin-top: 0;
       margin-left: 1.5em;
       background-color: #fff;
       border-radius: .5em;
     }
 
+    .button-link {
+      display: block;
+      padding: 0.5em;
+      color: #fff;
+      background-color: #0090C9;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    /* .button-link + .button-link {
+      margin-top: 1em;
+    } */
+
+    .sponsor-link {
+      display:block;
+      color: #0072b0;
+      font-weight: bold;
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -59,9 +86,9 @@
       </div>
     </main>
     <aside class="sidebar">
-      <div class="widget"></div>
-      <div class="widget"></div>
-      <div class="gizmo"></div>
+      <a href="/twitter" class="button-link">follow us on twitter</a>
+      <a href="/facebook" class="button-link">like us on facebook</a>
+      <a href="/sponsors" class="sponsor-link">become a sponsor</a>
     </aside>
   </div>
 </body>
