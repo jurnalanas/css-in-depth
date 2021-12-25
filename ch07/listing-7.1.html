@@ -56,6 +56,27 @@
 
     .modal-close {
       cursor: pointer;
+      position: absolute;
+      top: 0.3em;
+      right: 0.3em;
+      padding: 0.3em;
+      font-size: 2em;
+      height: 1em;
+      width: 1em;
+      text-indent: 10em;
+      overflow: hidden;
+      border: 0;
+    }
+
+
+    .modal-close::after {
+      position: absolute;
+      line-height: 0.5;
+      top: 0.2em;
+      left: 0.1em;
+      content: "\00D7";
+      /* because text-indent is an inherited property, you reset it to 0 on the pseudo-class so the x isn’t also indented. */
+      text-indent: 0;
     }
   </style>
 
@@ -72,7 +93,7 @@
   <div class="modal" id="modal">
     <div class="modal-backdrop"></div>
     <div class="modal-body">
-      <button class="modal-close" id="close">close</button>
+      <button class="modal-close" id="close"></button>
       <h2>Wombat Newsletter</h2>
       <p>Sign up for our monthly newsletter. No spam. We promise!</p>
       <form>
