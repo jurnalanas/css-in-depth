@@ -82,9 +82,25 @@
     }
 
     .container {
+      display: flex;
+      width: 80%;
       width: 80%;
       max-width: 1000px;
       margin: 1em auto;
+      min-height: 100vh;
+    }
+
+    .col-main {
+      flex: 1 80%;
+    }
+
+    .col-sidebar {
+      flex: 20%;
+    }
+
+    .affix {
+      position: sticky;
+      top: 1em;
     }
 
     .dropdown {
@@ -172,21 +188,34 @@
 
   </div>
   <div class="container">
-    <nav>
-      <div class="dropdown">
-        <div class="dropdown-label">Main Menu</div>
-        <div class="dropdown-menu">
-          <ul class="submenu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/coffee">Coffee</a></li>
-            <li><a href="/brewers">Brewers</a></li>
-            <li><a href="/specials">Specials</a></li>
-            <li><a href="/about">About Us</a></li>
-          </ul>
+    <main class="col-main">
+      <nav>
+        <div class="dropdown">
+          <div class="dropdown-label">Main Menu</div>
+          <div class="dropdown-menu">
+            <ul class="submenu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/coffee">Coffee</a></li>
+              <li><a href="/brewers">Brewers</a></li>
+              <li><a href="/specials">Specials</a></li>
+              <li><a href="/about">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </main>
+
+    <aside class="col-sidebar">
+      <div class="affix">
+        <div class="submenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/coffees">Coffee</a></li>
+          <li><a href="/brewers">brewers</a></li>
+          <li><a href="/specials">Specials</a></li>
+          <li><a href="/about">About us</a></li>
         </div>
       </div>
-    </nav>
-
+    </aside>
     <h1>Wombat Coffee Roasters</h1>
   </div>
 
