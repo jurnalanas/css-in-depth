@@ -121,6 +121,26 @@
     .menu.is-open .menu-dropdown {
       display: block;
     }
+
+    .nav-menu {
+      margin: 0;
+      padding-left: 0;
+      border: 1px solid #ccc;
+      list-style: none;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .nav-menu > li + li {
+      border-top: 1px solid #ccc;
+    }
+
+    .nav-menu > li > a {
+      display: block;
+      padding: 0.8em 1em;
+      color: #fff;
+      font-weight: normal;
+    }
   </style>
 </head>
 <body>
@@ -166,5 +186,15 @@
     </div>
   </main>
 
+  <script>
+    (function () {
+      var button = document.getElementById('toggle-menu');
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        var menu = document.getElementById('main-menu');
+        menu.classList.toggle('is-open');
+      });
+    })()
+  </script>
 </body>
 </html>
