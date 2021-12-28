@@ -45,6 +45,12 @@
       background-color: #fff;
     }
 
+    @media (min-width: 35em) {
+      .page-header {
+        padding: 1em;
+      }
+    }
+
     .title > h1 {
       color: #333;
       text-transform: uppercase;
@@ -67,8 +73,21 @@
       text-shadow: 0.1em 0.1em 0.3em #000;
     }
 
+    @media (min-width: 35em) {
+      .hero {
+        padding: 5em 3em;
+        font-size: 1.2rem;
+      }
+    }
+
     main {
       padding: 1em;
+    }
+
+    @media (min-width: 35em) {
+      main {
+        padding: 2em 1em;
+      }
     }
 
     .subtitle {
@@ -140,6 +159,52 @@
       padding: 0.8em 1em;
       color: #fff;
       font-weight: normal;
+    }
+
+    @media (min-width: 35em) {
+      .menu-toggle {
+        display: none;
+      }
+
+      .menu-dropdown {
+        display: block;
+        position: static;
+      }
+    }
+
+    @media (min-width: 35em) {
+      .nav-menu {
+        display: flex;
+        border: 0;
+        padding: 0 1em;
+      }
+
+      .nav-menu > li {
+        flex: 1;
+      }
+
+      .nav-menu > li + li {
+        border: 0;
+      }
+
+      .nav-menu > li > a {
+        padding: 0.3em;
+        text-align: center;
+      }
+    }
+
+
+    .title > h1 {
+      color: #333;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin: .2em 0;
+    }
+
+    @media (min-width: 35em) {
+      .title > h1 {
+        font-size: 2.25rem;
+      }
     }
   </style>
 </head>
